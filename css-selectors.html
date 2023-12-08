@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* id selector */
+      #uniqueId {
+        font-size: 12px;
+      }
+
+      /* descendant selector */
+      p a {
+        color: green;
+      }
+
+      ul li a {
+        color: brown;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="uniqueId">hello I have an id</h1>
+
+    <p>
+      <a href="https://google" target="_blank">Google.com</a>
+    </p>
+
+    <!-- <ol> organised list-->
+    <!-- unorganised list -->
+    <ul>
+      <!-- <p></p> -- BAD -->
+      <!-- list element -->
+      <li>
+        <a href="https://onet.pl">Onet</a>
+      </li>
+      <li>
+        <a href="https://youtube.com">Youtube</a>
+      </li>
+
+      <!-- bad closing tags -->
+      <!-- <li>
+        <a href="https://youtube.com">Youtube
+        </li>
+      </a> -->
+    </ul>
+
+    <ol>
+      <li>
+        <a href="https://onet.pl">Onet</a>
+      </li>
+    </ol>
+  </body>
+</html>
