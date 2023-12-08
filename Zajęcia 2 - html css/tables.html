@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .schedule {
+        border-collapse: collapse;
+      }
+      .schedule th {
+        background-color: aquamarine;
+      }
+
+      .schedule th,
+      .schedule td {
+        border: 1px solid black;
+        padding: 8px;
+      }
+      /* .schedule td {
+        border: 1px solid black;
+        padding: 8px;
+      } */
+
+      .schedule-body > tr:hover {
+        background-color: tomato;
+        color: white;
+        cursor: alias;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="schedule">
+      <thead>
+        <!-- table row -->
+        <tr>
+          <!-- table header cell -->
+          <th>Train Number</th>
+          <th>Route</th>
+          <th>Travel time</th>
+        </tr>
+      </thead>
+      <tbody class="schedule-body">
+        <tr>
+          <!-- table data cell -->
+          <td>433</td>
+          <td>London - Paris</td>
+          <td>5 hours</td>
+        </tr>
+
+        <tr>
+          <!-- table data cell -->
+          <td>701</td>
+          <td>NY - Chicago</td>
+          <td>7 hours</td>
+        </tr>
+
+        <tr>
+          <!-- table data cell -->
+          <td>258</td>
+          <td>Oslo - Warsaw</td>
+          <td>4 hours</td>
+        </tr>
+      </tbody>
+      <!-- <tfoot></tfoot> -->
+    </table>
+  </body>
+</html>
