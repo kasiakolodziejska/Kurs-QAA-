@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* every list element in a tag with a class of menu */
+      .menuDescendant li {
+        border: 1px solid red;
+      }
+
+      .menuChild > li {
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul class="menuChild">
+      <li>
+        Komputery
+        <ol class="submenu">
+          <li>Procesory</li>
+          <li>Monitory</li>
+          <li>Karty graficzne</li>
+        </ol>
+      </li>
+      <li>
+        AGD
+        <ol class="submenu">
+          <li>Lodówka</li>
+          <li>Pralki</li>
+          <li>Telewizory</li>
+        </ol>
+      </li>
+    </ul>
+
+    <ul class="menuDescendant">
+      <li>
+        Komputery
+        <ol class="submenu">
+          <li>Procesory</li>
+          <li>Monitory</li>
+          <li>Karty graficzne</li>
+        </ol>
+      </li>
+      <li>
+        AGD
+        <ol class="submenu">
+          <li>Lodówka</li>
+          <li>Pralki</li>
+          <li>Telewizory</li>
+        </ol>
+      </li>
+    </ul>
+  </body>
+</html>
