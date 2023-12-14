@@ -36,5 +36,7 @@ console.log("----Operatory logiczne-----")
 // Negation
 
 const age = 20
-console.log(age > 10)
+console.log(age > 10 && age < 30)
+
+
 
