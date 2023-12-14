@@ -1,7 +1,7 @@
 "use strict"
 
 console.log("------QA-----")
-const user = "Adam"
+const user = "Kasia"
 console.log('your username is ${user}"')
 console.log(`your username is ${user}`)
 console.log("your username is " + user)
