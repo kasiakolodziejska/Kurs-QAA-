@@ -38,7 +38,6 @@ console.log("----Operatory logiczne-----")
 const age = 20
 console.log(age > 10)
 console.log("-----AND-----")
-const age = 20
 // age > 10 => true
 // age < 30 => true
 // true && true
@@ -98,7 +97,7 @@ let cost = 0
 
 // if (subscription === "pro") cost = 100
 
-// if(truthy) -> kod się wykona
+// if(truthy) -> kod się wykona
 if (subscription.includes("pro")) {
   // not the greatest nesting of ifs
   if (subscription === "pro") {
