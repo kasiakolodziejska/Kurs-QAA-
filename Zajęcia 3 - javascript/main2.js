@@ -181,7 +181,7 @@ if (userSubscription.includes("pro")) {
 
 // A nadrzędny
 // B podrzędny
-// zmienne z A widoczne są w B
+// zmienne z A widoczne są w B
 // zmienne w B nie są widoczne A
 
 console.log("userCost", userCost)
@@ -196,7 +196,7 @@ for (let i = 0; i <= 20; i += 5) {
   // i === 0
   // obrót
   // i += 5
-  // i <= 20 => robię kolejny obrót
+  // i <= 20 => robię kolejny obrót
 }
 
 // i, j, k, l
@@ -257,7 +257,7 @@ for (let i = 1; i <= 30; i += 1) {
 for (let i = 0; i < 10; i += 1) {
   for (let j = 0; j < 10; j += 1) {
     if (j === 3) {
-      break // natychmiastowo kończy pętlę w której się znajduje
+      break // natychmiastowo kończy pętlę w której się znajduje
     }
     console.log({ i, j })
   }
