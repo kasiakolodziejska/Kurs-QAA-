@@ -16,7 +16,7 @@ console.log(clients[lastElementIndex])
 }
 
 console.log("-------iteracje----------")
-
+{
 const clients = ["Kasia", "Zuma", "Ida"];
 for (let i=0; i < clients.length; i += 1) {
     console.log(clients[1])
@@ -25,6 +25,7 @@ for (let i=0; i < clients.length; i += 1) {
 const client = ["Kasia", "Zuma", "Ida"];
 for (const client of clients) {
     console.log(client)
+}
 }
 
 const clients = ["Mango", "Ajax", "Poly"];
