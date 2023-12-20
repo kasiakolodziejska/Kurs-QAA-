@@ -11,10 +11,10 @@ function myColorChange() {
 const clients = ["Mango", "Poly", "Ajax"];
 
 
-// const clients = ["Patryk", "Adam", "Krzys"];
-// console.log(clients[0]); 
-// console.log(clients[1]); 
-// console.log(clients[2]); 
+const clients = ["Patryk", "Adam", "Krzys"];
+console.log(clients[0]); 
+console.log(clients[1]); 
+console.log(clients[2]); 
 
 
 // const clients = ["Patryk", "Adam", "Krzys"];
