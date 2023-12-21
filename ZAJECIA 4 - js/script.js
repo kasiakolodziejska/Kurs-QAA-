@@ -7,24 +7,25 @@ function myColorChange() {
     const element = document.getElementById("id01");
     element.style.color = "red";
 }
-
+{
 const clients = ["Mango", "Poly", "Ajax"];
-
-
+}
+{
 const clients = ["Patryk", "Adam", "Krzys"];
 console.log(clients[0]); 
 console.log(clients[1]); 
 console.log(clients[2]); 
+}
+{
+const clients = ["Patryk", "Adam", "Krzys"];
+clients[0] = "Kiwi";
+clients[1] = "Banan";
+console.log(clients);
+}
 
 
-// const clients = ["Patryk", "Adam", "Krzys"];
-// clients[0] = "Kiwi";
-// clients[1] = "Banan";
-// console.log(clients);
-
-
-// const clients = ["Patryk", "Adam", "Krzys"];
-// console.log(clients.length);
+//const clients = ["Patryk", "Adam", "Krzys", "Kasia", 2, false];
+//console.log(clients.length);
 
 
 // const clients = ["Patryk", "Adam", "Krzys"];
@@ -35,13 +36,16 @@ console.log(clients[2]);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////// TABLICE ITERACJE
 
+////const clients = ["Kasia", "Ida", "Zuma"];
 
-// const clients = ["Patryk", "Adam", "Krzys"];
+///for (let i = 0; i < clients.length; i += 1) {
+//console.log(clients[i]);
+//}
+//
 
-// for (let i = 0; i < clients.length; i += 1) {
-//   console.log(clients[i]);
-// }
-
+const dzieci = ["Gucio", "Ida"]
+for (const dziecko of dzieci)
+console.log(dziecko)
 
 // const clients = ["Patryk", "Adam", "Krzys"];
 // for (const client of clients) {
@@ -53,21 +57,21 @@ console.log(clients[2]);
 // }
 
 
-// const clients = ["Patryk", "Adam", "Krzys"];
-// const clientNameToFind = prompt("POdaj imie uzytkownika: ");
-// let message;
-// for (const client of clients) {
+const clients = ["Patryk", "Adam", "Krzys"];
+const clientNameToFind = prompt("Podaj imie uzytkownika: ");
+let message;
+for (const client of clients) {
 //   // W każdej iteracji sprawdzamy, czy element tablicy jest podobny
 //   // do imienia klienta. Jeśli wszystko się zgadza, wtedy zapiszmy w message
 //   // wiadomość o sukcesie i zróbmy break, aby przerwać poszukiwanie
-//   if (client === clientNameToFind) {
-//     message = "Klient z takim imieniem jest w bazie danych!";
-//     break;
-//   }
-//   // Jeśli nie znajdziemy podobieństw, to zapiszmy do message wiadomość o braku imienia
-//   message = "Nie znaleźliśmy takiego klienta w bazie danych!";
-// }
-// console.log(message); // "Klient z takim imieniem jest w bazie danych!"
+if (client === clientNameToFind) {
+     message = "Klient z takim imieniem jest w bazie danych!";
+     break;
+   }
+   // Jeśli nie znajdziemy podobieństw, to zapiszmy do message wiadomość o braku imienia
+  message = "Nie znaleźliśmy takiego klienta w bazie danych!";
+}
+ console.log(message); // "Klient z takim imieniem jest w bazie danych!"
 
 
 // const numbers = [1, 3, 14, 18, 4, 7, 29, 6, 34];
