@@ -85,12 +85,12 @@ if (client === clientNameToFind) {
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////// METODY TABLICOWE
 
-
-// const napis = "Napis";
-// console.log(napis.split("")); 
-// const message = "JavaScript jest ciekawy";
-// console.log(message.split(" ")); 
-
+{
+const napis = "Napis";
+console.log(napis.split("")); 
+const message = "JavaScript jest ciekawy";
+console.log(message.split(" ")); 
+}
 
 // const words = ["JavaScript", "jest", "ciekawy"];
 // console.log(words.join(""));
