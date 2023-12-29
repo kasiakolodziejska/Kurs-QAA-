@@ -13,6 +13,8 @@ function myColorChange() {
 
 //////////////////////////////////////////////////////////// FUNKCJE
 
+
+
 // // 1. Deklaracja funkcji multiply
 // function multiply() {
 //     // Ciało funkcji
@@ -21,10 +23,10 @@ function myColorChange() {
 
 
 // // Deklaracja parametrów x, y, z
-// function multiply(x, y, z) {
+//function multiply(x, y, z) {
 //     console.log(`Wynikiem mnożenia jest ${x * y * z}`);
 // }
-
+//multiply(2,4,5)
 
 
 // // 1. Deklaracja parametrów x, y, z
@@ -40,13 +42,13 @@ function myColorChange() {
 
 
 // function multiply(x, y, z) {
-//     console.log("Kod przed return jest wykonywany jak zwykle");
+//console.log("Kod przed return jest wykonywany jak zwykle");
   
 //     // Zwracamy wynik wyrażenia mnożenia
-//     return x * y * z;
+//  return x * y * z;
   
-//     console.log("Ten log nigdy nie zostanie wywołany, jest po return");
-//   }
+//   console.log("Ten log nigdy nie zostanie wywołany, jest po return");
+
   
 //   // Wynik funkcji można zapisać do zmiennej
 //   let result = multiply(2, 3, 5);
@@ -70,17 +72,16 @@ function myColorChange() {
 
 
 
-// function count(countFrom = 5, countTo = 10, step = 1) {
-//     console.log(`countFrom = ${countFrom}, countTo = ${countTo}, step = ${step}`);
+//function count(countFrom = 5, countTo = 10, step = 1) {
+//console.log(`countFrom = ${countFrom}, countTo = ${countTo}, step = ${step}`);
+//for (let i = countFrom; i <= countTo; i += step) {
+//console.log(i);
+// }
+// }
   
-//     for (let i = countFrom; i <= countTo; i += step) {
-//       console.log(i);
-//     }
-//   }
-  
-//   //count(1, 5); 
-//   //count(2); 
-//   //count();
+//count(1, 5); 
+//count(2); 
+//count();
 
 
 
@@ -107,18 +108,18 @@ function myColorChange() {
 
 
 
-// function withdraw(amount, balance) {
-//     if (amount === 0) {
-//       console.log("Dla operacji wprowadź kwotę większą od zera");
-//     } else if (amount > balance) {
-//       console.log("Za mało środków na koncie");
-//     } else {
-//       console.log("Operacja wypłaty powiodła się");
-//     }
-//   }
-//   withdraw(0, 300);
-//   withdraw(500, 300); 
-//   withdraw(100, 300); 
+function withdraw(amount, balance) {
+ if (amount === 0) {
+      console.log("Dla operacji wprowadź kwotę większą od zera");
+    } else if (amount > balance) {
+      console.log("Za mało środków na koncie");
+    } else {
+       console.log("Operacja wypłaty powiodła się");
+    }
+   }
+   withdraw(0, 300);
+   withdraw(500, 300); 
+   withdraw(100, 300); 
 
 
 
