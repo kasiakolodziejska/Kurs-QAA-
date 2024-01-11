@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      "use strict"
+      // []
+      // props
+      // DECLARATION
+      const book = {
+        title: "Witcher",
+        rating: 9.32,
+        genres: ["fantasy", "polish"],
+        isPublic: true,
+        author: {
+          firstName: "Andrzej",
+          lastName: "Sapkowski",
+          address: {
+            country: "Poland",
+          },
+        },
+        "isbn+number": "32FDSAFA#@T$GFSGSFD",
+      }
+
+      // dot notation
+      console.log(book.title) // "Witcher"
+      console.log(book.pageCount) // undefined
+
+      console.log(book.author.firstName) // "Andrzej"
+      console.log(book.genres[0]) // "fantasy"
+
+      // console.log(book.isbn+number) // wrong!
+
+      console.log(book["isbn+number"]) // "32FDSAFA#@T$GFSGSFD"
+      console.log(book["title"]) // "Witcher"
+
+      const isbnKey = "isbn+number"
+      console.log(book[isbnKey]) // "32FDSAFA#@T$GFSGSFD"
+
+      // SAVING AND MODIFYING
+      book.rating = 9 // modify
+      book["pageCount"] = 320 // adding new
+      book[isbnKey] = "NEW_ISBN_KEY" // modify
+      book.author.firstName = "andrzej" // modify
+      book.genres.push("science fiction") // push to nested array
+
+      console.log(book)
+
+      console.log("------------")
+
+      const name = "Dorota"
+      const age = "25"
+
+      // const user = {
+      //   name: name,
+      //   age: age
+      // }
+
+      const user = {
+        name,
+        age,
+      }
+
+      console.log(user)
+
+      const foo = {
+        [name]: true,
+      }
+
+      console.log(foo)
+
+      console.log("-------------")
+
+      console.log("tekst".toUpperCase()) // proof strings are special objects
+
+      const bookS = {
+        books: ["Witcher", "Game of Thrones"],
+        getBooks() {
+          // return bookShelf.books
+          return this.books
+        },
+        addBook(name) {
+          // bookShelf.books.push(name)
+          this.books.push(name)
+          console.log(`book ${name} added`)
+        },
+      }
+
+      console.log(bookS.addBook("Night Watch"))
+      console.log(bookS.addBook("Day Watch"))
+      console.log(bookS.getBooks())
+    </script>
+  </head>
+  <body></body>
+</html>
