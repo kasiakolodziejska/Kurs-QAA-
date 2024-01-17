@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      "use strict"
+
+      // callback
+      function greet(name) {
+        console.log(`Hi ${name}!`)
+      }
+
+      // cb === callback
+      // higher order fuction
+      function registerGuest(name, cb) {
+        console.log(`Registering ${name}`)
+        cb(name)
+      }
+
+      registerGuest("Dorota", greet)
+      greet("Mateusz")
+
+      console.log("--------")
+
+      // anonymous function
+      // callback
+      registerGuest("Michał", function (name) {
+        console.log(`Your room will be ready in 30 minutes`)
+      })
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      "use strict"
+
+      // higher order function
+      // param - wartość do opracowania
+      // success - callback jeżeli operacja się powiodła (funkcja)
+      // error - callback jeżeli operacja się nie powiodła (funkcja)
+      function foo(param, success, error) {
+        // TODO: some logic
+        const operationSuccess = Math.random() > 0.5 // [0-1)
+
+        if (operationSuccess) {
+          success(param)
+        } else {
+          error("Error message")
+        }
+      }
+
+      // value === "Error Message"
+      function errorLog(value) {
+        console.log(`[ERROR] ${value}`)
+      }
+
+      // value === param
+      function successLog(value) {
+        console.log(`[SUCCESS] ${value}`)
+      }
+
+      // param => "Hello World"
+      // success => successLog
+      // error => errorLog
+      foo("Hello world", successLog, errorLog)
+    </script>
+  </head>
+  <body></body>
+</html>
